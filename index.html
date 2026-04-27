@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>レイアウト・オブ・デス ― 白紙の校了日</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app">
+
+  <!-- タイトル画面 -->
+  <section id="title-screen" class="screen active">
+    <div class="title-vignette"></div>
+    <div class="title-inner">
+      <h1 class="game-title">
+        <span class="title-main">レイアウト・オブ・デス</span>
+        <span class="title-sub">― 白紙の校了日 ―</span>
+      </h1>
+      <p class="title-credit">A Sound Novel-Style Mystery</p>
+      <div class="title-buttons">
+        <button class="title-btn" data-action="start">はじめから</button>
+        <button class="title-btn" data-action="load">つづきから</button>
+        <button class="title-btn" data-action="about">この作品について</button>
+      </div>
+      <p class="title-hint">クリック / スペース で進行・スキップ</p>
+    </div>
+  </section>
+
+  <!-- 本編 -->
+  <section id="game-screen" class="screen">
+    <div class="bg-layer" id="bg-layer"></div>
+    <div class="bg-overlay" id="bg-overlay"></div>
+
+    <div class="hud">
+      <button class="hud-btn" id="btn-evidence" title="証拠">📋 証拠</button>
+      <button class="hud-btn" id="btn-trust" title="関係">👥 関係</button>
+      <button class="hud-btn" id="btn-save" title="セーブ">💾 セーブ</button>
+      <button class="hud-btn" id="btn-load" title="ロード">📁 ロード</button>
+      <button class="hud-btn" id="btn-title" title="タイトル">⏏ タイトル</button>
+    </div>
+
+    <div class="chapter-banner" id="chapter-banner"></div>
+
+    <div class="textbox" id="textbox">
+      <div class="namebox" id="namebox"></div>
+      <div class="textbody" id="textbody"></div>
+      <div class="next-marker" id="next-marker">▼</div>
+    </div>
+
+    <div class="choice-pane" id="choice-pane"></div>
+
+    <div class="modal" id="modal">
+      <div class="modal-inner">
+        <div class="modal-head">
+          <span class="modal-title" id="modal-title">情報</span>
+          <button class="modal-close" id="modal-close">×</button>
+        </div>
+        <div class="modal-body" id="modal-body"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about-screen" class="screen">
+    <div class="about-inner">
+      <h2>この作品について</h2>
+      <p>
+        都内の中堅デザイン制作会社「アトラス・クリエイティブ」を舞台にした、
+        本格ミステリー × 企業サスペンスの短編サウンドノベルです。
+      </p>
+      <p>
+        プレイヤーは入社3年目のグラフィックデザイナー・佐伯美澄として、
+        社内で起こる連続殺人事件の真相を追い、
+        3年前に消えた一人の若手デザイナー・遠野葵の<strong>名前</strong>を取り戻していきます。
+      </p>
+      <h3>操作</h3>
+      <ul>
+        <li>クリック / スペース / Enter：テキストを進める</li>
+        <li>選択肢が出たら、選びたいボタンをクリック</li>
+        <li>右上の HUD：証拠 / 関係 / セーブ / ロード</li>
+      </ul>
+      <h3>エンディング</h3>
+      <ul>
+        <li>A：校了 / B：差し戻し / C：非公開案件 / D：白紙</li>
+      </ul>
+      <button class="title-btn" data-action="back-title">タイトルへ戻る</button>
+    </div>
+  </section>
+
+</div>
+
+<script src="js/audio.js"></script>
+<script src="js/scenario.js"></script>
+<script src="js/scenario_p1.js"></script>
+<script src="js/scenario_p2.js"></script>
+<script src="js/scenario_p3.js"></script>
+<script src="js/scenario_p4.js"></script>
+<script src="js/engine.js"></script>
+</body>
+</html>

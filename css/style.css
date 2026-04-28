@@ -191,37 +191,11 @@ html, body {
 .bg-ending-b       { background-image: url('../assets/bg/ending_b.png')       !important; }
 .bg-ending-c       { background-image: url('../assets/bg/ending_c.png')       !important; }
 .bg-ending-d       { background-image: url('../assets/bg/ending_d.png')       !important; }
-.bg-corridor {
-  background:
-    linear-gradient(180deg, #1a1d22 0%, #0a0c10 100%) !important;
-}
-.bg-server-room {
-  background:
-    radial-gradient(ellipse at 60% 50%, #0c2a1a 0%, #050a08 70%, #000 100%) !important;
-}
-.bg-client-office {
-  background:
-    linear-gradient(180deg, #2a364a 0%, #0e141e 100%) !important;
-}
-.bg-bar {
-  background:
-    radial-gradient(ellipse at 50% 70%, #4a2a0c 0%, #1a0e04 60%, #050202 100%) !important;
-}
-.bg-cafe {
-  background:
-    linear-gradient(180deg, #4a3a26 0%, #1c1408 100%) !important;
-}
+
+/* 演出用（画像なし） */
 .bg-studio {
   background:
     radial-gradient(ellipse at 50% 30%, #e6e2d6 0%, #b6ad96 70%, #4e4636 100%) !important;
-}
-.bg-rooftop {
-  background:
-    linear-gradient(180deg, #1c2238 0%, #050810 60%, #02030a 100%) !important;
-}
-.bg-presentation {
-  background:
-    radial-gradient(ellipse at 50% 35%, #2c1a1a 0%, #0a0608 60%, #02020a 100%) !important;
 }
 .bg-flash-red {
   background:
@@ -229,21 +203,6 @@ html, body {
 }
 .bg-white-out {
   background: #f7f3e8 !important;
-}
-.bg-ending-a {
-  background:
-    radial-gradient(ellipse at 50% 70%, #d8b87a 0%, #6e5a3a 60%, #1a140a 100%) !important;
-}
-.bg-ending-b {
-  background:
-    linear-gradient(180deg, #2a2e34 0%, #0c0e12 100%) !important;
-}
-.bg-ending-c {
-  background:
-    linear-gradient(180deg, #cfc8b8 0%, #7a7464 100%) !important;
-}
-.bg-ending-d {
-  background: #f7f7f7 !important;
 }
 .bg-black { background: #000 !important; }
 

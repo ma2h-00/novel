@@ -65,7 +65,7 @@ through silhouette bodies, soft outline, no anime, no manga, no realism,
 | 篠原 千尋（先輩・29歳） | `Shinohara-shape` | translucent crimson silhouette, average-height woman, **short bob hair**, layered cardigan over loose shirt with straight pants, composed straight posture, hands often folded near waist |
 | 三枝 透子（取締役・41歳） | `Mitsue-shape` | translucent crimson silhouette, tall woman, **hair tied up in a chignon**, sharp tailored blazer + pencil skirt, very upright authoritative posture |
 | 瀬川 真理（黒幕・33歳） | `Segawa-shape` | translucent crimson silhouette, slim woman, **tight low ponytail**, fitted power suit jacket and pencil skirt, heels, arms crossed, chin slightly raised |
-| 白石 エリカ（外注絵師・31歳） | `Shiraishi-shape` | translucent crimson silhouette, average build woman, **loose messy ponytail**, oversized denim jacket over tee and jeans, slouchy artistic stance, hands in pockets |
+| 白河 エリカ（外注絵師・31歳） | `Shirakawa-shape` | translucent crimson silhouette, average build woman, **loose messy ponytail**, oversized denim jacket over tee and jeans, slouchy artistic stance, hands in pockets |
 
 ### 男性キャラ（青系シルエット）
 
@@ -449,10 +449,10 @@ text. Slight wind feeling.
 
 ---
 
-### #11 — `cafe.jpg` （第四章・白石との対話）
+### #11 — `cafe.jpg` （第四章・白河との対話）
 
 **Setting**: 個人経営の小さなカフェ。木のテーブル。ペンダントライト。  
-**Characters**: 白石（左、横顔気味）、美澄（右、横顔気味）
+**Characters**: 白河（左、横顔気味）、美澄（右、横顔気味）
 
 **Prompt**:
 ```
@@ -466,13 +466,13 @@ white curtains, a small framed picture on the wall.
 
 Seated on the left side of the table, body turned in 3/4 toward the
 camera:
-Shiraishi-shape — translucent crimson red silhouette ~70% opacity of
+Shirakawa-shape — translucent crimson red silhouette ~70% opacity of
 an average build woman with loose messy ponytail, oversized denim
 jacket over t-shirt, slouchy artistic stance, leaning back, one arm
 on the table.
 
 Seated on the right side of the table, body turned in 3/4 toward the
-camera (mirroring Shiraishi but smaller):
+camera (mirroring Shirakawa but smaller):
 Misumi-shape — translucent crimson red silhouette ~70% opacity of a
 slim young woman with shoulder-length straight hair, loose blouse,
 slightly forward-leaning, both hands on the table.
@@ -493,7 +493,7 @@ light contrasts gently with the lamp light.
 ### #12 — `presentation.jpg` （第六章・最終プレゼン／告発）
 
 **Setting**: 暗くした大会議室。スクリーンに最終キービジュアル。観客席のシルエット。  
-**Characters**: 美澄（中央前方、立って告発するポーズ）、観客席に久我・篠原・瀬川・立花・三枝代理・白石
+**Characters**: 美澄（中央前方、立って告発するポーズ）、観客席に久我・篠原・瀬川・立花・三枝代理・白河
 
 **重要**：これが「告発」シーン。**美澄のポーズが「真犯人を指差す／資料を突きつける」と一目でわかる**ようにする。
 
@@ -531,7 +531,7 @@ projector light. From left to right (in order of seating from camera):
 - Segawa-shape (crimson female, tight ponytail, fitted suit, sitting
   perfectly upright, arms crossed, jaw lifted, refusing to react —
   the one Misumi is pointing toward)
-- Shiraishi-shape (crimson female, loose ponytail, oversized jacket,
+- Shirakawa-shape (crimson female, loose ponytail, oversized jacket,
   sitting at the edge of the row arms folded protectively)
 
 Misumi's pointing finger is unmistakably aimed in the direction of

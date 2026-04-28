@@ -33,7 +33,7 @@
       shinohara: 0,
       kuga: 0,
       amamiya: 0,
-      shiraishi: 0,
+      shirakawa: 0,
       tachibana: 0,
       kurose: 0,
     },
@@ -44,6 +44,7 @@
   /* ---------- 描画ヘルパ ---------- */
   let typeTimer = null;
   let typingActive = false;
+  let pendingFinish = null;   // 現在進行中の typewrite() を即時完了する関数
   let waitingForAdvance = false;
   let advanceResolver = null;
   let currentBg = null;
@@ -97,18 +98,10 @@
       textbody.textContent = '';
       let i = 0;
       const speed = opts.fast ? 8 : 28;
-      const blipEvery = 3;
+
       function step() {
-        if (!typingActive) {
-          textbody.textContent = text;
-          finish();
-          return;
-        }
+        if (!typingActive) return;  // 既に finish 済み
         textbody.textContent = text.slice(0, ++i);
-        if (i % blipEvery === 0 && text[i - 1] && !/\s/.test(text[i - 1])) {
-          // クリック音（小）
-          // 文字ごとは多すぎるので blipEvery 文字ごと
-        }
         if (i < text.length) {
           typeTimer = setTimeout(step, speed);
         } else {
@@ -116,19 +109,22 @@
         }
       }
       function finish() {
+        if (!typingActive) return;
         typingActive = false;
+        clearTimeout(typeTimer);
+        textbody.textContent = text;
         showNextMarker(true);
+        pendingFinish = null;
         resolve();
       }
+      pendingFinish = finish;
       step();
     });
   }
 
   function skipTyping() {
-    if (typingActive) {
-      typingActive = false;
-      clearTimeout(typeTimer);
-    }
+    // タイピング中のクリック → 全文表示 + Promise 解決
+    if (pendingFinish) pendingFinish();
   }
 
   /* ---------- ユーザー入力待ち ---------- */
@@ -460,7 +456,7 @@
     Audio.sfx.click();
     const labels = {
       shinohara: '篠原 千尋', kuga: '久我 玲司', amamiya: '雨宮 蓮',
-      shiraishi: '白石 エリカ', tachibana: '立花 祐介', kurose: '黒瀬 直人',
+      shirakawa: '白河 エリカ', tachibana: '立花 祐介', kurose: '黒瀬 直人',
     };
     const html = Object.entries(state.trust).map(([k, v]) => {
       const pct = ((v + 3) / 6) * 100;

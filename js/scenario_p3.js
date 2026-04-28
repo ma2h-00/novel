@@ -48,31 +48,31 @@ Object.assign(SCENARIO.scenes, {
       { t: 'shake' },
       { t: 'n', v: '深夜の役員フロア。\n取締役・三枝透子が、何者かに襲撃された。' },
       { t: 'n', v: '一命は取り留めたが、意識は戻らない。\n――事件は、過去の復讐だけじゃない。\n現在進行形で、誰かが「証拠」そのものを消そうとしている。' },
-      { t: 'goto', v: 'ch4_shiraishi' },
+      { t: 'goto', v: 'ch4_shirakawa' },
     ],
   },
 
-  ch4_shiraishi: {
+  ch4_shirakawa: {
     events: [
       { t: 'bg', v: 'bg-cafe' },
       { t: 'bgm', v: 'sad' },
-      { t: 'n', v: '外注イラストレーター、白石エリカ。\n葵と個人的に親しかった、唯一の人物。' },
-      { t: 'd', n: '白石エリカ', v: '会社の人? 信用しないって決めてるんで。\n……でも、あなたは、ちょっと違うのかな。\nそう思わせるだけ、見させて。' },
+      { t: 'n', v: '外注イラストレーター、白河エリカ。\n葵と個人的に親しかった、唯一の人物。' },
+      { t: 'd', n: '白河エリカ', v: '会社の人? 信用しないって決めてるんで。\n……でも、あなたは、ちょっと違うのかな。\nそう思わせるだけ、見させて。' },
       { t: 'choice', prompt: '何を伝える？', options: [
         { text: '「葵さんの名前を、世に出します」と約束する',
-          trust: { shiraishi: 2 },
-          goto: 'ch4_shiraishi_open' },
+          trust: { shirakawa: 2 },
+          goto: 'ch4_shirakawa_open' },
         { text: '「会社のことは私が処理します」と説得する',
-          trust: { shiraishi: -1 },
+          trust: { shirakawa: -1 },
           set: { obey6: true },
-          goto: 'ch4_shiraishi_close' },
+          goto: 'ch4_shirakawa_close' },
       ] },
     ],
   },
 
-  ch4_shiraishi_open: {
+  ch4_shirakawa_open: {
     events: [
-      { t: 'd', n: '白石エリカ', v: '……分かった。\n葵が私に預けてた、未公開のポートフォリオ。あれを見せる。' },
+      { t: 'd', n: '白河エリカ', v: '……分かった。\n葵が私に預けてた、未公開のポートフォリオ。あれを見せる。' },
       { t: 'sfx', v: 'paper' },
       { t: 'n', v: '差し出された一冊。\n表紙には、葵の名前で「私のデザインを、私の名前で残したい」とだけ書かれていた。' },
       { t: 'ev', v: 'ev_aoi_portfolio' },
@@ -81,11 +81,11 @@ Object.assign(SCENARIO.scenes, {
     ],
   },
 
-  ch4_shiraishi_close: {
+  ch4_shirakawa_close: {
     events: [
-      { t: 'd', n: '白石エリカ', v: '……ああ、そう。\n会社の中では普通でも、外から見たら、それは搾取ですよ。' },
-      { t: 'd', n: '白石エリカ', v: 'それに気づかないから、あなたたちは人を壊すんです。' },
-      { t: 'n', v: '白石は、ポートフォリオを見せなかった。' },
+      { t: 'd', n: '白河エリカ', v: '……ああ、そう。\n会社の中では普通でも、外から見たら、それは搾取ですよ。' },
+      { t: 'd', n: '白河エリカ', v: 'それに気づかないから、あなたたちは人を壊すんです。' },
+      { t: 'n', v: '白河は、ポートフォリオを見せなかった。' },
       { t: 'goto', v: 'ch5_intro' },
     ],
   },

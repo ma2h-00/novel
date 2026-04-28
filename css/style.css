@@ -48,7 +48,7 @@ html, body {
   background-color: #06050a;
   background-image:
     linear-gradient(rgba(6,5,10,0.55), rgba(6,5,10,0.85)),
-    url('../assets/bg/title.jpg');
+    url('../assets/bg/title.png');
   background-size: cover;
   background-position: center;
 }
@@ -176,21 +176,21 @@ html, body {
   background-position: center !important;
   background-repeat: no-repeat !important;
 }
-.bg-office-day     { background-image: url('../assets/bg/office_day.jpg')     !important; }
-.bg-office-night   { background-image: url('../assets/bg/office_night.jpg')   !important; }
-.bg-meeting-room   { background-image: url('../assets/bg/meeting_room.jpg')   !important; }
-.bg-meeting-crime  { background-image: url('../assets/bg/meeting_crime.jpg')  !important; }
-.bg-corridor       { background-image: url('../assets/bg/corridor.jpg')       !important; }
-.bg-server-room    { background-image: url('../assets/bg/server_room.jpg')    !important; }
-.bg-bar            { background-image: url('../assets/bg/bar.jpg')            !important; }
-.bg-client-office  { background-image: url('../assets/bg/client_office.jpg')  !important; }
-.bg-rooftop        { background-image: url('../assets/bg/rooftop.jpg')        !important; }
-.bg-cafe           { background-image: url('../assets/bg/cafe.jpg')           !important; }
-.bg-presentation   { background-image: url('../assets/bg/presentation.jpg')   !important; }
-.bg-ending-a       { background-image: url('../assets/bg/ending_a.jpg')       !important; }
-.bg-ending-b       { background-image: url('../assets/bg/ending_b.jpg')       !important; }
-.bg-ending-c       { background-image: url('../assets/bg/ending_c.jpg')       !important; }
-.bg-ending-d       { background-image: url('../assets/bg/ending_d.jpg')       !important; }
+.bg-office-day     { background-image: url('../assets/bg/office_day.png')     !important; }
+.bg-office-night   { background-image: url('../assets/bg/office_night.png')   !important; }
+.bg-meeting-room   { background-image: url('../assets/bg/meeting_room.png')   !important; }
+.bg-meeting-crime  { background-image: url('../assets/bg/meeting_crime.png')  !important; }
+.bg-corridor       { background-image: url('../assets/bg/corridor.png')       !important; }
+.bg-server-room    { background-image: url('../assets/bg/server_room.png')    !important; }
+.bg-bar            { background-image: url('../assets/bg/bar.png')            !important; }
+.bg-client-office  { background-image: url('../assets/bg/client_office.png')  !important; }
+.bg-rooftop        { background-image: url('../assets/bg/rooftop.png')        !important; }
+.bg-cafe           { background-image: url('../assets/bg/cafe.png')           !important; }
+.bg-presentation   { background-image: url('../assets/bg/presentation.png')   !important; }
+.bg-ending-a       { background-image: url('../assets/bg/ending_a.png')       !important; }
+.bg-ending-b       { background-image: url('../assets/bg/ending_b.png')       !important; }
+.bg-ending-c       { background-image: url('../assets/bg/ending_c.png')       !important; }
+.bg-ending-d       { background-image: url('../assets/bg/ending_d.png')       !important; }
 .bg-corridor {
   background:
     linear-gradient(180deg, #1a1d22 0%, #0a0c10 100%) !important;

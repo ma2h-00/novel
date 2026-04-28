@@ -337,9 +337,20 @@
 
       case 'reason': {
         // 推理：与えられた選択肢の中から正解の証拠を選ばせる
-        const opts = ev.options.map((o) => ({
-          text: o.text + (o.evRequired && !hasEvidence(o.evRequired) ? '　[未取得]' : ''),
-          disabled: o.evRequired && !hasEvidence(o.evRequired),
+        // 必要証拠を持っている選択肢だけを残す（evRequired 無しは常に残す）
+        const available = ev.options.filter(
+          (o) => !o.evRequired || hasEvidence(o.evRequired)
+        );
+
+        // 一つも残らなければ設問自体を表示せずスキップ（wrong 扱いで進む）
+        if (available.length === 0) {
+          if (ev.wrongSet) Object.entries(ev.wrongSet).forEach(([k, v]) => setFlag(k, v));
+          if (ev.wrongGoto) return { jump: ev.wrongGoto };
+          return null;
+        }
+
+        const opts = available.map((o) => ({
+          text: o.text,
           isCorrect: !!o.correct,
           goto: o.goto,
           set: o.set,

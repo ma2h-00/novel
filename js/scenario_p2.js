@@ -28,6 +28,32 @@ Object.assign(SCENARIO.scenes, {
       { t: 'ev', v: 'ev_concept_memo' },
       { t: 'd', n: '佐伯', v: 'このコンセプト……\n今やっている新ブランド案件のキービジュアルと、構図がそっくりじゃない。' },
       { t: 'd', n: '佐伯', v: '葵さんのアイデアは……消されたんじゃない。\nまだ今も、生きている？' },
+      { t: 'goto', v: 'ch2_kurose_blackmail' },
+    ],
+  },
+
+  ch2_kurose_blackmail: {
+    events: [
+      { t: 'bg', v: 'bg-corridor' },
+      { t: 'bgm', v: 'tense' },
+      { t: 'n', v: '資料庫を出ると、廊下の自販機の陰から、聞き慣れた声がした。\n外注ライター・黒瀬直人。電話越しに、低く、笑っている。' },
+      { t: 'd', n: '黒瀬（電話）', v: '梶原さん、惚けないで。\n――三年前のNOXの「赤字」、誰が書いたか、僕は知ってるんだ。' },
+      { t: 'd', n: '黒瀬（電話）', v: '今月末まで。同額で、立花くんにも、瀬川さんにも、同じ話をしてあるから。\n……ああ、久我さんにもね。' },
+      { t: 'sfx', v: 'sting' },
+      { t: 'n', v: '黒瀬は、関係者ほぼ全員に、同じ手を打っていた。\n――梶原だけが、黒瀬に応じる前に死んだ。' },
+      { t: 'ev', v: 'ev_kurose_blackmail_log' },
+      { t: 'd', n: '佐伯', v: '（脅迫……それも、複数。\nじゃあ、梶原さんを殺したのは、黒瀬さんじゃない――）' },
+      { t: 'goto', v: 'ch2_kurose_shirakawa_glimpse' },
+    ],
+  },
+
+  ch2_kurose_shirakawa_glimpse: {
+    events: [
+      { t: 'bg', v: 'bg-cafe' },
+      { t: 'n', v: '会社の裏手、外注先がよく使う喫茶店。\nガラス越しに、見覚えのある二人の影。' },
+      { t: 'n', v: '黒瀬と――外注イラストレーター、白河エリカ。\n黒瀬が、何かの紙束を白河に押しつけ、白河は、首を横に振っていた。' },
+      { t: 'd', n: '佐伯', v: '（白河さんは、葵さんの友達だったはず。\n黒瀬さんと、何を話してるんだろう）' },
+      { t: 'n', v: 'やがて白河は、紙束を受け取らずに席を立った。\n黒瀬は、独りで残された。' },
       { t: 'goto', v: 'ch2_kurose_call' },
     ],
   },
@@ -74,7 +100,8 @@ Object.assign(SCENARIO.scenes, {
     events: [
       { t: 'd', n: '佐伯', v: '葵さんの話、聞かせてください。\n……黒瀬さん、知ってますよね。' },
       { t: 'd', n: '黒瀬', v: '……ほんと、葵ちゃんは、コピーもデザインも若手離れして上手かったよ。\n自分の名前で残したい、ってずっと言ってた。それだけだったんだ。' },
-      { t: 'd', n: '黒瀬', v: '御社との共有データサーバーの奥に、ZIPを置いておくよ。\nパスワードは「葵」……万一もし僕に何かあったら、開けてくれ。' },
+      { t: 'd', n: '黒瀬', v: '御社との共有データサーバーの奥に、ZIPを置いておくよ。\n名前は「NOX_revision_last」。パスワードのヒントは「葵の名前」。' },
+      { t: 'd', n: '黒瀬', v: 'PCの中に置いてたら、消されちまうからね。\n……万一もし僕に何かあったら、君の権限で開けてくれ。' },
       { t: 'ev', v: 'ev_kurose_zip' },
       { t: 'goto', v: 'ch2_kurose_dead' },
     ],
@@ -94,7 +121,30 @@ Object.assign(SCENARIO.scenes, {
       { t: 'sfx', v: 'shock' },
       { t: 'shake' },
       { t: 'd', n: '佐伯', v: '同じ書き癖だ。\n――やっぱり、梶原部長の時と同じ人物が書いている。' },
-      { t: 'if', flag: 'ev_kurose_zip', then: 'ch2_after_kurose' },
+      { t: 'if', evidence: 'ev_kurose_zip', then: 'ch2_zip_server' },
+      { t: 'goto', v: 'ch2_after_kurose' },
+    ],
+  },
+
+  ch2_zip_server: {
+    events: [
+      { t: 'bg', v: 'bg-server-room' },
+      { t: 'bgm', v: 'mystery' },
+      { t: 'n', v: '深夜、共用サーバの外注ライター用フォルダ。\nアクセス権限は、案件担当者であれば誰でも――まだ、生きていた。' },
+      { t: 'sfx', v: 'paper' },
+      { t: 'd', n: '佐伯', v: 'NOX_revision_last.zip。\n――パスワードのヒントは、「葵の名前」。' },
+      { t: 'd', n: '佐伯', v: '「Aoi」では弾かれた。「葵」も違う。\n……「toono_aoi」。\n――通った。' },
+      { t: 'sfx', v: 'sting' },
+      { t: 'goto', v: 'ch2_zip_unlock' },
+    ],
+  },
+
+  ch2_zip_unlock: {
+    events: [
+      { t: 'n', v: 'ZIPの中身は、黒瀬本人の脅迫記録だった。\n対象、要求金額、握っている弱み。\n――梶原、立花、瀬川、久我。' },
+      { t: 'd', n: '佐伯', v: '黒瀬さんは、関係者全員を相手にしてた。\nだから、誰か一人の単独犯じゃない。\n――でも、黒瀬さんが現場メッセージの「赤字」を書ける人物じゃないことだけは、ハッキリした。' },
+      { t: 'ev', v: 'ev_kurose_blackmail_log' },
+      { t: 'd', n: '佐伯', v: '黒瀬さんを殺した人と、メッセージを残した人は、たぶん、同じ。\n――そして、その人物は、葵さんを知っている。' },
       { t: 'goto', v: 'ch2_after_kurose' },
     ],
   },
@@ -106,7 +156,26 @@ Object.assign(SCENARIO.scenes, {
       { t: 'd', n: '篠原', v: '黒瀬さん、亡くなったんだってね。\n……こんな名前の残し方って、あんまりよね……' },
       { t: 'd', n: '篠原', v: '美澄ちゃん。\n――あなたは、自分の名前を残したい？' },
       { t: 'n', v: '篠原は答えを待たずに、廊下の方へ消えていった。' },
-      { t: 'goto', v: 'ch3_intro' },
+      { t: 'goto', v: 'ch2_shinohara_walk' },
+    ],
+  },
+
+  ch2_shinohara_walk: {
+    events: [
+      { t: 'bg', v: 'bg-corridor' },
+      { t: 'bgm', v: 'sad' },
+      { t: 'n', v: '深夜の廊下。\n非常灯だけが、二人の足元を細く照らしていた。' },
+      { t: 'd', n: '篠原', v: '私ね、葵が辞める前の日、\n会社の前で、あの子と少しだけ話したの。' },
+      { t: 'd', n: '篠原', v: '「私のデザインを、私の名前で残したい」。\n――そう言ってた。' },
+      { t: 'd', n: '篠原', v: '私は、何も言ってあげられなかった。\nただ「うん、わかってる」って、そう言うだけだった。' },
+      { t: 'choice', prompt: 'どう答える？', options: [
+        { text: '「篠原さんは、悪くない」と言う',
+          trust: { shinohara: 1 },
+          goto: 'ch3_intro' },
+        { text: '黙って、隣を歩く',
+          trust: { shinohara: 2 },
+          goto: 'ch3_intro' },
+      ] },
     ],
   },
 
@@ -133,15 +202,30 @@ Object.assign(SCENARIO.scenes, {
       { t: 'n', v: 'ノクス側の若手担当・立花は、瀬川を恐れていた。\nそれが、目の動きでわかる。' },
       { t: 'd', n: '立花', v: '過去案件には、もう触れない方がいいですよ。\n――でも、もし、何か起きたら……' },
       { t: 'd', n: '立花', v: '僕のスマホに、書きかけのメールがある。\n宛先は、佐伯さん。\n……もし、僕に何かあったら、開いてみてください。' },
-      { t: 'ev', v: 'ev_unsent_mail' },
       { t: 'choice', prompt: 'どう答える？', options: [
         { text: '「触れません」と答える',
           set: { obey4: true },
-          goto: 'ch3_warning' },
+          goto: 'ch3_tachibana_call' },
         { text: '「私は、知るべきだと思います」と答える',
           trust: { tachibana: 1 },
-          goto: 'ch3_warning' },
+          goto: 'ch3_tachibana_call' },
       ] },
+    ],
+  },
+
+  ch3_tachibana_call: {
+    events: [
+      { t: 'bg', v: 'bg-office-night' },
+      { t: 'bgm', v: 'tense' },
+      { t: 'sfx', v: 'blip' },
+      { t: 'n', v: 'その日の深夜、立花祐介から、震える声で電話が入った。' },
+      { t: 'd', n: '立花（電話）', v: '佐伯さん。\nやっぱり、伝えておかないと。\n――葵さんの件、瀬川さんは知ってます。最初から、全部。' },
+      { t: 'd', n: '立花（電話）', v: 'でも、それを「進めろ」って言ってきたのは、瀬川さんじゃない。\nトリケラの中の、もっと近い人です。' },
+      { t: 'd', n: '佐伯', v: '誰、ですか？' },
+      { t: 'd', n: '立花（電話）', v: 'いま、誰か来た。\n……ごめん、また――' },
+      { t: 'sfx', v: 'shock' },
+      { t: 'n', v: '通話は、急に切れた。\n以後、立花の番号からは、二度と着信が来ることはなかった。' },
+      { t: 'goto', v: 'ch3_warning' },
     ],
   },
 
@@ -157,11 +241,40 @@ Object.assign(SCENARIO.scenes, {
         { text: '「会社の方針に従います」',
           set: { obey5: true },
           trust: { shinohara: -1 },
-          goto: 'ch3_shinohara' },
+          goto: 'ch3_tachibana_dead' },
         { text: '「真実です」と即答する',
           trust: { shinohara: 1 },
-          goto: 'ch3_shinohara' },
+          goto: 'ch3_tachibana_dead' },
       ] },
+    ],
+  },
+
+  ch3_tachibana_dead: {
+    events: [
+      { t: 'bg', v: 'bg-meeting-crime' },
+      { t: 'bgm', v: 'dread' },
+      { t: 'sfx', v: 'sting' },
+      { t: 'flash' },
+      { t: 'shake' },
+      { t: 'n', v: '翌朝。\nノクスビューティー本社、地下駐車場。\n立花祐介が、自分の車の運転席で、動かなくなっていた。' },
+      { t: 'n', v: '助手席の上に、三つ目のメッセージ。' },
+      { t: 'd', n: '???', v: 'これは、誰のための「修正」？' },
+      { t: 'd', n: '佐伯', v: '同じだ。\n……同じ筆跡、同じ赤いフェルトペン。' },
+      { t: 'goto', v: 'ch3_unsent_mail_discover' },
+    ],
+  },
+
+  ch3_unsent_mail_discover: {
+    events: [
+      { t: 'bg', v: 'bg-cafe' },
+      { t: 'bgm', v: 'sad' },
+      { t: 'n', v: 'ノクス側の人事担当が、立花のスマホを警察より先に押さえようとしていた。\n――美澄が、彼のメールアプリを覗けたのは、ほんの数分。' },
+      { t: 'sfx', v: 'paper' },
+      { t: 'n', v: '「下書き」フォルダ。\n宛先は、確かに、佐伯美澄。本文は、一行で止まっていた。' },
+      { t: 'd', n: '立花（メモ）', v: '「遠野葵さんの件について、私は――」' },
+      { t: 'ev', v: 'ev_unsent_mail' },
+      { t: 'd', n: '佐伯', v: '途中で消されてる。\nでも、書きかけだから、まだ、会社の検閲には載ってない。\n……間に合った。' },
+      { t: 'goto', v: 'ch3_shinohara' },
     ],
   },
 

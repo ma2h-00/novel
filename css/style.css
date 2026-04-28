@@ -45,8 +45,12 @@ html, body {
    タイトル画面
    ========================================================= */
 #title-screen {
-  background:
-    radial-gradient(ellipse at 50% 30%, #1a1320 0%, #06050a 70%, #000 100%);
+  background-color: #06050a;
+  background-image:
+    linear-gradient(rgba(6,5,10,0.55), rgba(6,5,10,0.85)),
+    url('../assets/bg/title.jpg');
+  background-size: cover;
+  background-position: center;
 }
 .title-vignette {
   position: absolute; inset: 0;
@@ -152,23 +156,41 @@ html, body {
   transition: opacity 1.2s ease;
 }
 
-/* 背景バリエーション */
-.bg-office-day {
-  background:
-    radial-gradient(ellipse at 30% 25%, #f4ecd8 0%, #c8b894 60%, #6a5b3f 100%) !important;
+/* 背景バリエーション ― 画像が用意されたものは画像を使う */
+.bg-layer.bg-office-day,
+.bg-layer.bg-office-night,
+.bg-layer.bg-meeting-room,
+.bg-layer.bg-meeting-crime,
+.bg-layer.bg-corridor,
+.bg-layer.bg-server-room,
+.bg-layer.bg-bar,
+.bg-layer.bg-client-office,
+.bg-layer.bg-rooftop,
+.bg-layer.bg-cafe,
+.bg-layer.bg-presentation,
+.bg-layer.bg-ending-a,
+.bg-layer.bg-ending-b,
+.bg-layer.bg-ending-c,
+.bg-layer.bg-ending-d {
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
 }
-.bg-office-night {
-  background:
-    radial-gradient(ellipse at 50% 30%, #1c2434 0%, #0a0c14 60%, #04050a 100%) !important;
-}
-.bg-meeting-room {
-  background:
-    radial-gradient(ellipse at 50% 40%, #2a1416 0%, #0c0608 70%, #020102 100%) !important;
-}
-.bg-meeting-crime {
-  background:
-    radial-gradient(ellipse at 50% 60%, #5a0e10 0%, #1c0608 50%, #06020a 100%) !important;
-}
+.bg-office-day     { background-image: url('../assets/bg/office_day.jpg')     !important; }
+.bg-office-night   { background-image: url('../assets/bg/office_night.jpg')   !important; }
+.bg-meeting-room   { background-image: url('../assets/bg/meeting_room.jpg')   !important; }
+.bg-meeting-crime  { background-image: url('../assets/bg/meeting_crime.jpg')  !important; }
+.bg-corridor       { background-image: url('../assets/bg/corridor.jpg')       !important; }
+.bg-server-room    { background-image: url('../assets/bg/server_room.jpg')    !important; }
+.bg-bar            { background-image: url('../assets/bg/bar.jpg')            !important; }
+.bg-client-office  { background-image: url('../assets/bg/client_office.jpg')  !important; }
+.bg-rooftop        { background-image: url('../assets/bg/rooftop.jpg')        !important; }
+.bg-cafe           { background-image: url('../assets/bg/cafe.jpg')           !important; }
+.bg-presentation   { background-image: url('../assets/bg/presentation.jpg')   !important; }
+.bg-ending-a       { background-image: url('../assets/bg/ending_a.jpg')       !important; }
+.bg-ending-b       { background-image: url('../assets/bg/ending_b.jpg')       !important; }
+.bg-ending-c       { background-image: url('../assets/bg/ending_c.jpg')       !important; }
+.bg-ending-d       { background-image: url('../assets/bg/ending_d.jpg')       !important; }
 .bg-corridor {
   background:
     linear-gradient(180deg, #1a1d22 0%, #0a0c10 100%) !important;

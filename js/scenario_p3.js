@@ -22,7 +22,7 @@ Object.assign(SCENARIO.scenes, {
   ch4_no_recording: {
     events: [
       { t: 'd', n: '雨宮', v: '中身までは、まだ渡せない。\n……君が本気か、もう少し見させてくれ。' },
-      { t: 'goto', v: 'ch4_attack' },
+      { t: 'goto', v: 'ch4_amamiya_logfix' },
     ],
   },
 

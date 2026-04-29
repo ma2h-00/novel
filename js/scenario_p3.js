@@ -63,7 +63,7 @@ Object.assign(SCENARIO.scenes, {
 
   ch4_kuga_data: {
     events: [
-      { t: 'bg', v: 'bg-office-night' },
+      { t: 'bg', v: 'bg-locker-night' },
       { t: 'bgm', v: 'tense' },
       { t: 'n', v: '深夜、誰もいないクリエイティブ部のフロア。\n久我玲司の私物ロッカー。鍵は、彼が最近、合鍵を篠原に渡している。' },
       { t: 'd', n: '佐伯', v: '篠原さんに、ロッカーの鍵を貸してもらった。\n――「もう、終わらせて」って、言われた。' },
@@ -92,7 +92,7 @@ Object.assign(SCENARIO.scenes, {
 
   ch4_attack: {
     events: [
-      { t: 'bg', v: 'bg-corridor' },
+      { t: 'bg', v: 'bg-attack-corridor' },
       { t: 'bgm', v: 'dread' },
       { t: 'wait', v: 500 },
       { t: 'sfx', v: 'shock' },
@@ -106,7 +106,7 @@ Object.assign(SCENARIO.scenes, {
 
   ch4_mitsue_aftermath: {
     events: [
-      { t: 'bg', v: 'bg-office-night' },
+      { t: 'bg', v: 'bg-executive-room' },
       { t: 'bgm', v: 'mystery' },
       { t: 'n', v: '取締役室。\n机の右下――三枝が示していた、二重底。' },
       { t: 'sfx', v: 'paper' },
@@ -158,7 +158,7 @@ Object.assign(SCENARIO.scenes, {
   /* ============== 第五章：推理パート ============== */
   ch5_intro: {
     events: [
-      { t: 'bg', v: 'bg-office-night' },
+      { t: 'bg', v: 'bg-desk-evidence' },
       { t: 'bgm', v: 'tense' },
       { t: 'chap', v: '第五章\nデザインレビュー' },
       { t: 'n', v: '集めた資料を、机に並べる。\n赤字、メール、録音、ラフ、手帳。\n――全てが、一枚の絵として読み解かれるのを待っている。' },

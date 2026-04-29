@@ -66,6 +66,7 @@ Object.assign(SCENARIO.scenes, {
 
   ch6_correct: {
     events: [
+      { t: 'bg', v: 'bg-presentation-break' },
       { t: 'bgm', v: 'finale' },
       { t: 'd', n: '佐伯', v: '篠原さん。\n現場に残された赤字メッセージ。\nあなたが普段書いている、修正指示の癖と、一致します。' },
       { t: 'd', n: '佐伯', v: '語尾の打ち方、改行のタイミング、\n――この赤色のフェルトペンの選び方まで。' },

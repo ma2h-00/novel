@@ -23,7 +23,7 @@ const Audio = (() => {
 
   function resume() {
     ensure();
-    if (ctx && ctx.state === 'suspended') ctx.suspend(), ctx.resume();
+    if (ctx && ctx.state === 'suspended') ctx.resume();
   }
 
   function setMuted(v) {
@@ -179,7 +179,10 @@ const Audio = (() => {
     });
     const oldNodes = bgmNodes;
     setTimeout(() => {
-      oldNodes.forEach((n) => { try { n.osc && n.osc.stop(); } catch (e) {} });
+      oldNodes.forEach((n) => {
+        try { n.osc && n.osc.stop(); } catch (e) {}
+        try { n.lfo && n.lfo.stop(); } catch (e) {}
+      });
     }, fade * 1000 + 100);
     bgmNodes = [];
     bgmId = null;

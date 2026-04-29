@@ -677,6 +677,254 @@ that-was-erased.
 
 ---
 
+### #17 — `locker_night.png` （`ch4_kuga_data` 久我のロッカー）
+
+**Setting**: 深夜のクリエイティブ部フロア。スチール製のロッカー列。中央が半開きで、二重底から葵のNOXコンセプト原本が露出。署名は黒マジックで塗り潰されている。  
+**Characters**: 美澄ひとり（後ろ姿、ロッカーを覗き込む）  
+**用途**: `ch4_kuga_data` 専用。汎用 `office_night.png` の代替。
+
+**Prompt**:
+```
+A deserted creative-department floor at deep midnight, cool teal-green
+emergency lighting only. A row of tall steel personal lockers lines the
+right wall in dramatic perspective. The center locker stands ajar, its
+door angled open toward camera, revealing inside: a stack of old paper
+roughs and concept sheets pulled up from a hidden FALSE BOTTOM at the
+bottom of the locker (the lifted false-bottom panel visible at an angle).
+On the top sheet, a signature in the lower-right corner has been
+violently scribbled out with thick black permanent marker. Above it, a
+fresh handwritten note in unreadable abstract dark strokes (no actual
+letters), suggesting "TRICERA Creative". A few sheets have spilled onto
+the dark linoleum floor at the foot of the locker. A small crumpled key
+on a keyring rests on the floor.
+
+Foreground left, with her back to the camera, leaning forward looking
+into the open locker:
+Misumi-shape — translucent crimson red silhouette ~70% opacity of a
+slim young woman with shoulder-length straight hair, loose blouse and
+slim pants, one hand reaching into the locker, the other holding a
+phone-light. The cold green emergency glow shows faintly through her
+translucent body.
+
+The rest of the floor recedes into darkness. Heavy vignette. Lower 30%
+darker for text overlay. Mood: trespass, taboo, the moment a secret is
+unburied.
+```
+
+---
+
+### #18 — `attack_corridor.png` （`ch4_attack` 三枝襲撃の現場）
+
+**Setting**: 深夜の役員フロア廊下。倒れた三枝。床に散らばった決裁書。非常灯の警告色。  
+**Characters**: 三枝（床に倒れる）  
+**用途**: `ch4_attack` 専用。汎用 `corridor.png` の襲撃差分版。
+
+**Prompt**:
+```
+A long executive-floor corridor at deep night, cold institutional
+palette but with a sudden hard splash of warm crimson emergency light
+flashing from a single overhead alarm fixture casting long unstable
+red shadows across the walls. Polished dark stone floor. The corridor
+stretches into vanishing-point darkness. A heavy executive door stands
+slightly ajar at the back left, faint warm office light bleeding from
+inside.
+
+In the mid-foreground, collapsed on the floor at the threshold of the
+open executive door, body twisted unnaturally to one side, one arm
+outstretched toward camera as if she had been reaching for something:
+Mitsue-shape — translucent crimson red silhouette ~70% opacity of a
+tall woman with hair tied up in a chignon, sharp tailored blazer and
+pencil skirt, no overt blood — silhouette only — but the posture of
+violent collapse is unmistakable. The corridor floor pattern shows
+faintly through her body.
+
+Around her on the floor: a few scattered decision-document sheets, a
+fallen pen, a small dark spreading shape that reads as a shadow, not
+explicit gore. Above her on the wall, the warm red emergency glow
+pulses, leaving the rest of the corridor in deep shadow.
+
+Composition: low camera angle from down the corridor, looking toward
+the fallen figure, dramatic chiaroscuro red-vs-black. Heavy vignette.
+Lower 30% darker for text. Mood: violent, sudden, irreversible — the
+opposite of the calm corridor.png.
+```
+
+---
+
+### #19 — `executive_room.png` （`ch4_mitsue_aftermath` 取締役室の二重底）
+
+**Setting**: 取締役室。深夜。重厚な木の執務机、引き出しが開いて二重底パネルが斜めに浮く。机上にNOX決裁書のコピーが扇状に並ぶ。  
+**Characters**: 美澄（手前、後ろ姿、机を覗き込む）  
+**用途**: `ch4_mitsue_aftermath` 専用。
+
+**Prompt**:
+```
+A corporate executive office at midnight after the attack. Warm dark
+wood paneling on every wall, deep oxblood and walnut palette. A heavy
+wooden executive desk dominates the lower-center foreground, lit by a
+single brass desk lamp casting a focused warm pool of light across the
+desk surface. Behind the desk, a tall leather chair, empty. Floor-to-
+ceiling bookshelves of legal binders fill the back wall in deep shadow.
+
+On the desk surface, the right-hand drawer hangs fully extended, its
+FALSE BOTTOM panel lifted at an angle and propped against the desk
+edge, revealing the hidden cavity below. Spread out across the desk in
+a fan of papers, the photocopies of three-year-old NOX project
+decision documents — corporate-form sheets with horizontal ruled lines,
+stamped circular approval seals (red ink, abstract not readable) at
+specific name fields, and at the top of each sheet, the proposer field
+written clearly in handwriting that reads as a name but uses only
+abstract ink strokes (no real letters). A few sheets are partially
+overlapped; one is centered under the lamp, fully lit.
+
+Foreground right, only her back and head visible, leaning over the
+desk reading the documents:
+Misumi-shape — translucent crimson red silhouette ~70% opacity of a
+slim young woman with shoulder-length straight hair, loose blouse and
+slim pants, both hands flat on the desk edge. The desk surface and
+papers show faintly through her body.
+
+Composition: warm-lit pool centered on the documents, the rest of the
+room descends into deep shadow. Heavy vignette. Lower 30% darker for
+text overlay. Mood: forensic, hushed, the inheritance of a warning.
+```
+
+---
+
+### #20 — `archive_room.png` （`ch2_archive` 古い資料庫）
+
+**Setting**: 地下/奥まった資料庫。スチールラックに段ボール箱が積まれる。蛍光灯一本。床に開いた箱、葵の鉛筆署名のラフ。  
+**Characters**: 美澄ひとり（しゃがんで箱を覗く）  
+**用途**: `ch2_archive` 専用。汎用 `corridor.png` の代替。
+
+**Prompt**:
+```
+A cramped corporate document archive room, dust-heavy and forgotten.
+Cool dim flickering single fluorescent tube hanging crooked from the
+ceiling, casting uneven greenish-white light. Tall industrial steel
+shelving units line both side walls in tight perspective, packed floor-
+to-ceiling with identical brown cardboard archive boxes labeled with
+abstract horizontal stroke marks (not real letters). Visible dust motes
+drifting in the air. The narrow central aisle is dark concrete floor
+scuffed by years of foot traffic.
+
+In the center foreground, a single archive box sits open on the floor,
+its lid tossed aside. Spilling out of it, a stack of old design rough
+sketches on yellowed paper, pencil draft strokes, with one sheet on top
+showing a small handwritten signature in the lower-right corner — just
+a soft pencil mark, abstract not readable. The faint outline of an
+abstract minimalist key visual (a soft curved ellipse) is sketched in
+the center of the top sheet.
+
+Foreground center, crouched beside the open box, body in 3/4 turned
+away from camera, one knee on the floor, one hand picking up a sheet:
+Misumi-shape — translucent crimson red silhouette ~70% opacity of a
+slim young woman with shoulder-length straight hair, loose blouse and
+slim pants. The shelving and dust motes show faintly through her body.
+
+Composition: tight, claustrophobic, asymmetric, the shelves pressing
+in. Strong dust grain in the air, deep vignette. Lower 30% darker for
+text. Mood: archaeological — uncovering something that was meant to
+stay buried.
+```
+
+---
+
+### #21 — `desk_evidence.png` （`ch5_intro` 〜 `ch5_q7` 推理パート）
+
+**Setting**: 深夜の自席。机一面に証拠（赤字メモ、印刷したメール、録音機、ラフ、手帳、ZIPの一覧）が並ぶ俯瞰視点。  
+**Characters**: 美澄（手前下、頭・肩のみ、机を見下ろす）  
+**用途**: 第五章 推理パート全体。汎用 `office_night.png` の代替。
+
+**Prompt**:
+```
+A high-angle nearly top-down view of a single designer's desk at deep
+midnight, cool desk-lamp warm pool against surrounding navy darkness.
+The desk fills almost the entire frame, viewed from above and slightly
+behind. The desk surface is meticulously arranged like a detective's
+evidence board:
+- Top-left: a scrap of paper with thick red felt-tip marker scrawl in
+  abstract horizontal strokes (no real letters), suggesting the killer's
+  message.
+- Top-center: a printed email page with horizontal ruled text lines.
+- Top-right: a small black handheld voice recorder with a tiny red LED.
+- Mid-left: an open A5 day-planner with handwritten abstract strokes.
+- Mid-center: a stack of old design roughs, the topmost showing a soft
+  abstract key visual (curved ellipse).
+- Mid-right: a printed ZIP file directory listing.
+- Bottom of the desk: a closed laptop, slightly off to one side, its
+  screen glow turned off.
+
+Each piece is connected by very thin red yarn lines pinned with small
+push-pins, creating a web of associations across the desk surface — but
+the lines are subtle, not garish.
+
+In the lower foreground, only the top of her head and her shoulders
+visible at the bottom edge of the frame, looking down onto the desk
+from above:
+Misumi-shape — translucent crimson red silhouette ~70% opacity of a
+slim young woman with shoulder-length straight hair, loose blouse, both
+hands resting on the desk edge. The desk shows faintly through her
+shoulders.
+
+Composition: orderly, forensic, near-symmetric overhead view. Warm
+single-lamp pool of light at center, edges of the desk receding into
+black. Lower 30% darker for text overlay. Mood: quiet methodical
+assembly — "校了前の最終チェック".
+```
+
+---
+
+### #22 — `presentation_break.png` （`ch6_correct` 篠原の崩壊）
+
+**Setting**: プレゼン中盤。スクリーンが消えかけ、聴衆の篠原が立ち上がりかけて頭を下げる。  
+**Characters**: 美澄（演壇、指差した腕を下ろす途中）、篠原（観客席で立ち上がる、頭を下げる）、他の関係者は座ったまま影  
+**用途**: `ch6_correct`。汎用 `presentation.png` の崩壊差分版。
+
+**重要**：**篠原だけが立ち上がっており頭を下げている**ことが一目でわかるように。瀬川は座ったまま頑な姿勢で対比させる。
+
+**Prompt**:
+```
+The same dim corporate presentation room from presentation.jpg but at
+the moment of confession-collapse. The huge screen at the back center
+of the frame now shows the abstract key visual fading to soft white,
+the projector beam dimming. The warm spotlight on the podium remains.
+
+At the center podium, body squared to camera, accusing arm now lowered
+halfway to her side, the other hand still clutching the documents,
+head slightly tilted as she looks toward the audience:
+Misumi-shape — translucent crimson red silhouette ~70% opacity of a
+slim young woman with shoulder-length straight hair, loose blouse and
+slim pants. Her posture has softened from accusatory to receiving.
+
+In the foreground audience row, one figure has risen halfway from her
+seat, knees bent, one hand braced on the chair back, head bowed deep —
+the posture of someone publicly breaking:
+Shinohara-shape — translucent crimson red silhouette ~70% opacity of a
+woman with short bob hair, layered cardigan over loose shirt with
+straight pants. She is the only standing figure in the audience.
+
+Around her, the other audience silhouettes remain seated and still in
+deep shadow against the projector light:
+- Kuga-shape (navy male, short cropped hair, leaning back stunned)
+- Tachibana-shape (navy male, neat hair, suit and tie, lanyard, frozen)
+- Segawa-shape (crimson female, tight ponytail, fitted suit, rigidly
+  upright but jaw locked, refusing to look at Shinohara)
+- Shirakawa-shape (crimson female, loose ponytail, oversized jacket,
+  hand half-raised toward Shinohara as if wanting to catch her)
+
+Distinguish Shinohara (bob, standing, bowed) clearly from Segawa
+(ponytail, seated, rigid) and Shirakawa (loose ponytail, seated,
+reaching) by hair shape and posture alone.
+
+Heavy chiaroscuro: the standing Shinohara is the focal point, rim-lit
+crimson by the dimming screen behind her. Lower 30% darker for text.
+Mood: the breath after the accusation lands — collapse, release, the
+oldest grief.
+```
+
+---
+
 ## 4. 制作順の推奨
 
 1. **キャラ・レファレンス画像**（10 体 × 1 枚ずつ、白背景・正面・後ろ姿）  

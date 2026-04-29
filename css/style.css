@@ -168,6 +168,12 @@ html, body {
 .bg-layer.bg-rooftop,
 .bg-layer.bg-cafe,
 .bg-layer.bg-presentation,
+.bg-layer.bg-locker-night,
+.bg-layer.bg-attack-corridor,
+.bg-layer.bg-executive-room,
+.bg-layer.bg-archive-room,
+.bg-layer.bg-desk-evidence,
+.bg-layer.bg-presentation-break,
 .bg-layer.bg-ending-a,
 .bg-layer.bg-ending-b,
 .bg-layer.bg-ending-c,
@@ -176,21 +182,27 @@ html, body {
   background-position: center !important;
   background-repeat: no-repeat !important;
 }
-.bg-office-day     { background-image: url('../assets/bg/office_day.png')     !important; }
-.bg-office-night   { background-image: url('../assets/bg/office_night.png')   !important; }
-.bg-meeting-room   { background-image: url('../assets/bg/meeting_room.png')   !important; }
-.bg-meeting-crime  { background-image: url('../assets/bg/meeting_crime.png')  !important; }
-.bg-corridor       { background-image: url('../assets/bg/corridor.png')       !important; }
-.bg-server-room    { background-image: url('../assets/bg/server_room.png')    !important; }
-.bg-bar            { background-image: url('../assets/bg/bar.png')            !important; }
-.bg-client-office  { background-image: url('../assets/bg/client_office.png')  !important; }
-.bg-rooftop        { background-image: url('../assets/bg/rooftop.png')        !important; }
-.bg-cafe           { background-image: url('../assets/bg/cafe.png')           !important; }
-.bg-presentation   { background-image: url('../assets/bg/presentation.png')   !important; }
-.bg-ending-a       { background-image: url('../assets/bg/ending_a.png')       !important; }
-.bg-ending-b       { background-image: url('../assets/bg/ending_b.png')       !important; }
-.bg-ending-c       { background-image: url('../assets/bg/ending_c.png')       !important; }
-.bg-ending-d       { background-image: url('../assets/bg/ending_d.png')       !important; }
+.bg-office-day        { background-image: url('../assets/bg/office_day.png')        !important; }
+.bg-office-night      { background-image: url('../assets/bg/office_night.png')      !important; }
+.bg-meeting-room      { background-image: url('../assets/bg/meeting_room.png')      !important; }
+.bg-meeting-crime     { background-image: url('../assets/bg/meeting_crime.png')     !important; }
+.bg-corridor          { background-image: url('../assets/bg/corridor.png')          !important; }
+.bg-server-room       { background-image: url('../assets/bg/server_room.png')       !important; }
+.bg-bar               { background-image: url('../assets/bg/bar.png')               !important; }
+.bg-client-office     { background-image: url('../assets/bg/client_office.png')     !important; }
+.bg-rooftop           { background-image: url('../assets/bg/rooftop.png')           !important; }
+.bg-cafe              { background-image: url('../assets/bg/cafe.png')              !important; }
+.bg-presentation      { background-image: url('../assets/bg/presentation.png')      !important; }
+.bg-locker-night      { background-image: url('../assets/bg/locker_night.png')      !important; }
+.bg-attack-corridor   { background-image: url('../assets/bg/attack_corridor.png')   !important; }
+.bg-executive-room    { background-image: url('../assets/bg/executive_room.png')    !important; }
+.bg-archive-room      { background-image: url('../assets/bg/archive_room.png')      !important; }
+.bg-desk-evidence     { background-image: url('../assets/bg/desk_evidence.png')     !important; }
+.bg-presentation-break { background-image: url('../assets/bg/presentation_break.png') !important; }
+.bg-ending-a          { background-image: url('../assets/bg/ending_a.png')          !important; }
+.bg-ending-b          { background-image: url('../assets/bg/ending_b.png')          !important; }
+.bg-ending-c          { background-image: url('../assets/bg/ending_c.png')          !important; }
+.bg-ending-d          { background-image: url('../assets/bg/ending_d.png')          !important; }
 
 /* 演出用（画像なし） */
 .bg-studio {

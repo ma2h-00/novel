@@ -20,7 +20,7 @@ Object.assign(SCENARIO.scenes, {
 
   ch2_archive: {
     events: [
-      { t: 'bg', v: 'bg-corridor' },
+      { t: 'bg', v: 'bg-archive-room' },
       { t: 'sfx', v: 'paper' },
       { t: 'n', v: '埃をかぶった段ボール箱。\n中から、まだ印刷インクの匂いが残るラフ案の束が出てくる。' },
       { t: 'd', n: '佐伯', v: 'あ、これ……NOXプロジェクトの、最初期のラフ。' },

@@ -198,7 +198,7 @@ html, body {
 .bg-executive-room    { background-image: url('../assets/bg/executive_room.png')    !important; }
 .bg-archive-room      { background-image: url('../assets/bg/archive_room.png')      !important; }
 .bg-desk-evidence     { background-image: url('../assets/bg/desk_evidence.png')     !important; }
-.bg-presentation-break{ background-image: url('../assets/bg/presentation_break.png')!important; }
+.bg-presentation-break { background-image: url('../assets/bg/presentation_break.png') !important; }
 .bg-ending-a          { background-image: url('../assets/bg/ending_a.png')          !important; }
 .bg-ending-b          { background-image: url('../assets/bg/ending_b.png')          !important; }
 .bg-ending-c          { background-image: url('../assets/bg/ending_c.png')          !important; }

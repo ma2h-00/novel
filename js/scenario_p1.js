@@ -112,16 +112,19 @@ Object.assign(SCENARIO.scenes, {
 
   ch1_hub: {
     events: [
-      { t: 'choice', prompt: '今、最初に話を聞くなら――', options: [
+      { t: 'choice', prompt: '誰に話を聞く？', options: [
         { text: '篠原 千尋（先輩デザイナー）', goto: 'ch1_shinohara' },
         { text: '久我 玲司（直属上司）',     goto: 'ch1_kuga' },
-        { text: '雨宮 蓮（社内SE）',   goto: 'ch1_amamiya' },
+        { text: '雨宮 蓮（社内SE）',         goto: 'ch1_amamiya' },
+        { text: '今日はここまで／自席に戻る', goto: 'ch1_chatlog' },
       ] },
     ],
   },
 
   ch1_shinohara: {
     events: [
+      { t: 'if', flag: 'v_ch1_shinohara', then: 'ch1_shinohara_revisit' },
+      { t: 'set', k: 'v_ch1_shinohara', v: true },
       { t: 'bg', v: 'bg-corridor' },
       { t: 'd', n: '篠原', v: '美澄ちゃん。……大丈夫？　ご飯、食べた？' },
       { t: 'd', n: '佐伯', v: '篠原さん。三年前のNOX案件って、何があったんですか？' },
@@ -134,12 +137,21 @@ Object.assign(SCENARIO.scenes, {
       { t: 'd', n: '佐伯', v: 'あ……ありがとうございます。' },
       { t: 'trust', who: 'shinohara', d: 1 },
       { t: 'ev', v: 'ev_shinohara_redink' },
-      { t: 'goto', v: 'ch1_chatlog' },
+      { t: 'goto', v: 'ch1_hub' },
+    ],
+  },
+
+  ch1_shinohara_revisit: {
+    events: [
+      { t: 'd', n: '篠原', v: 'もう、私から言えるのは、これくらいかな。\n……机の上の赤入れ、ちゃんと見てね。' },
+      { t: 'goto', v: 'ch1_hub' },
     ],
   },
 
   ch1_kuga: {
     events: [
+      { t: 'if', flag: 'v_ch1_kuga', then: 'ch1_kuga_revisit' },
+      { t: 'set', k: 'v_ch1_kuga', v: true },
       { t: 'bg', v: 'bg-corridor' },
       { t: 'd', n: '久我', v: 'どうした佐伯。仕事に戻れ。' },
       { t: 'd', n: '佐伯', v: 'すみません、過去のNOX案件のことで――' },
@@ -148,16 +160,25 @@ Object.assign(SCENARIO.scenes, {
       { t: 'choice', prompt: 'どう答える？', options: [
         { text: '「分かりました」と引き下がる',
           set: { obey3: true },
-          goto: 'ch1_chatlog' },
+          goto: 'ch1_hub' },
         { text: '黙って目を逸らさず、頷かない',
           trust: { kuga: -1 },
-          goto: 'ch1_chatlog' },
+          goto: 'ch1_hub' },
       ] },
+    ],
+  },
+
+  ch1_kuga_revisit: {
+    events: [
+      { t: 'd', n: '久我', v: '何度も言わせるな。\n……仕事に戻れ。' },
+      { t: 'goto', v: 'ch1_hub' },
     ],
   },
 
   ch1_amamiya: {
     events: [
+      { t: 'if', flag: 'v_ch1_amamiya', then: 'ch1_amamiya_revisit' },
+      { t: 'set', k: 'v_ch1_amamiya', v: true },
       { t: 'bg', v: 'bg-server-room' },
       { t: 'd', n: '雨宮', v: 'お、デザイナーさんがサーバ室まで来るとは珍しい。どうしたの？' },
       { t: 'd', n: '佐伯', v: '雨宮さん。事件のあった夜、社内ログに変なところはありませんでしたか。' },
@@ -166,7 +187,14 @@ Object.assign(SCENARIO.scenes, {
       { t: 'd', n: '佐伯', v: 'え。私、入ってませんけど。権限もないはずですし。' },
       { t: 'd', n: '雨宮', v: 'うん。それが「変」ってこと。\n――気が向いたら、また来てよ。' },
       { t: 'trust', who: 'amamiya', d: 1 },
-      { t: 'goto', v: 'ch1_chatlog' },
+      { t: 'goto', v: 'ch1_hub' },
+    ],
+  },
+
+  ch1_amamiya_revisit: {
+    events: [
+      { t: 'd', n: '雨宮', v: '今日のところは、これ以上はナシ。\n……またおいで。' },
+      { t: 'goto', v: 'ch1_hub' },
     ],
   },
 
